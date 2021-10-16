@@ -1,0 +1,35 @@
+.reset, button.yein-btn {
+  appearance: none;
+  border: none;
+}
+
+button.yein-btn {
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+button.yein-btn.btn-primary {
+  background-color: #1456ac;
+  color: white;
+}
+button.yein-btn.btn-primary:hover {
+  background-color: #2873d4;
+}
+button.yein-btn.btn-primary:focus, button.yein-btn.btn-primary:active,
+button.yein-btn.btn-primary .active {
+  background-color: #0a4490;
+}
+button.yein-btn.btn-secondary {
+  background-color: #2f2f2f;
+  color: white;
+}
+button.yein-btn.btn-secondary:hover {
+  background-color: #555555;
+}
+button.yein-btn.btn-secondary:focus, button.yein-btn.btn-secondary:active,
+button.yein-btn.btn-secondary .active {
+  background-color: #0f0f0f;
+}
+
+/*# sourceMappingURL=style.css.map */

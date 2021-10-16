@@ -1,0 +1,28 @@
+button {
+  &.#{$prefix}-btn {
+    @extend .reset;
+
+    padding: 8px 20px;
+    @include border-radius(6px);
+    cursor: pointer;
+
+    transition: background-color 0.15s ease-in-out;
+
+    @each $name, $idle, $hover, $focus-active in $theme {
+      &.btn-#{$name} {
+        background-color: $idle;
+        color: white;
+
+        &:hover {
+          background-color: $hover;
+        }
+
+        &:focus,
+        &:active,
+        .active {
+          background-color: $focus-active;
+        }
+      }
+    }
+  }
+}

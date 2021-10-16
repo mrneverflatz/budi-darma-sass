@@ -1,0 +1,20 @@
+$prefix: "yein";
+$theme: (
+  "primary" rgb(20, 86, 172) rgb(40, 115, 212) rgb(10, 68, 144),
+  "secondary" rgb(47, 47, 47) rgb(85, 85, 85) rgb(15, 15, 15)
+);
+
+$enable-rounded: true;
+
+@mixin border-radius($radius: 0) {
+  @if $enable-rounded {
+    border-radius: $radius;
+  }
+}
+
+.reset {
+  appearance: none;
+  border: none;
+}
+
+@import "button";
